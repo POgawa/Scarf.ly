@@ -1,10 +1,8 @@
 #Scarf.ly
+A community of soccer neckwear enthusiasts
+###Adam Tirella - Founder
 
-	by
-
-##Adam Tirella - Founder
-
-##Paul Ogawa - Developer
+###Paul Ogawa - Developer
 
 
 This is scarf.ly a community for the soccer/football enthusiasts world wide to come and share which scarves they have, which they want and just generally enjoy hanging out. 
