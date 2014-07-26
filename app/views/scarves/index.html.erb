@@ -1,0 +1,31 @@
+<h1>Listing scarves</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Club</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scarves.each do |scarf| %>
+      <tr>
+        <td><%= scarf.title %></td>
+        <td><%= scarf.description %></td>
+        <td><%= scarf.club_id %></td>
+        <td><%= scarf.user_id %></td>
+        <td><%= link_to 'Show', scarf %></td>
+        <td><%= link_to 'Edit', edit_scarf_path(scarf) %></td>
+        <td><%= link_to 'Destroy', scarf, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Scarf', new_scarf_path %>
