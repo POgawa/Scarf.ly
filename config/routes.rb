@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: "pages#index"
-  get "pages/about", as: :about
+  get "pages/about"
   resources :scarves
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
