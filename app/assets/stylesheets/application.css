@@ -1,5 +1,4 @@
 @import "bootstrap";
-@import "bootstrap_flatly";
 
 
 
@@ -19,7 +18,6 @@
  *= require_tree .
  *= require_self
  */
- @import url('/css/normalize.css');
  @import url("//fonts.googleapis.com/css?family=Roboto+Slab:300italic,400italic,700italic,400,300,500,700");
 
 
