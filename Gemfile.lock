@@ -262,7 +262,6 @@ DEPENDENCIES
   poltergeist
   quiet_assets
   rails (= 4.1.0)
-  rails_12factor
   rerun
   rspec-rails
   rubocop
