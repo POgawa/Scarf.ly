@@ -59,7 +59,7 @@ class ScarvesController < ApplicationController
       format.html { redirect_to scarves_url, notice: 'Scarf was successfully destroyed.' }
       format.json { head :no_content }
     end
-  end
+  endpp
 
   private
     # Use callbacks to share common setup or constraints between actions.
