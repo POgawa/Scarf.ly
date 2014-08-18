@@ -1,20 +1,4 @@
-<div class="box first">
-	<div class="aboutlinks">
-		<ul>
-	  		<% if user_signed_in? %>
-	  		  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
-	  		  <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
-	  		<% else %>
-	  		  <li><%= link_to 'Sign in', new_user_session_path %></li>
-	  		  <li><%= link_to 'Sign up', new_user_registration_path %></li>
-	  		<% end %>
-	  		
-	  		<li><a href="pages/about.html">About</a></li>
-	    	<li><a href="mailto:adam@scarf.ly">Contact</a></li>
 
-	  	</ul>
-	 </div>
-	 
 	<h1>Scarf.ly</h1>
 	  <h2>A community of soccer neckwear enthusiasts.</h2>
 
@@ -26,18 +10,3 @@
 			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
 		</form>
 
-		
-	<!--End mc_embed_signup-->
-	</div>
-</div>
-
-<!--
-BEGIN FOOTER
-AREA HERE
--->
-
-
-<!--
-END PAGE CONTENT
-ABOVE
--
