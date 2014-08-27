@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 	end
 
 	def show
+		@scarves = Scarves.all 
 		@user = User.find_by_id(params[:id])
 	end
 
@@ -26,7 +27,7 @@ class UsersController < ApplicationController
 		@user = User.find params[:id]
 		@user.destroy
 		flash[:notice] = "User successfully deleted."
-		redirect_to users_path
+		redirect_to root_path
 	end
 
 	private

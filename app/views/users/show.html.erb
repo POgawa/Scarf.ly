@@ -1,7 +1,9 @@
 
 this is where it is going????
 
-<h1><% @user.email%></h1>
+<h1><%= @user.email %></h1>
 
-
+<% @scarves.each do |sc|%>
+	sc.user
+<%end%>
 <%= link_to "Home", root_path %>
