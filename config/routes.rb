@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
-  resources :teams
 
   root to: "pages#index"
   get "pages/about"
-  resources :scarves
+
+  resources :teams do
+    resources :scarves, only: [:new, :create] 
+  end
+
   devise_for :users
+
   resources :users, only: [:index, :show, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
