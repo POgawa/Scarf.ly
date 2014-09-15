@@ -3,13 +3,28 @@ Rails.application.routes.draw do
   root to: "pages#index"
   get "pages/about"
 
+  resources :teams
   resources :teams do
-    resources :scarves, only: [:new, :create] 
+    resources :scarves, only: [:new, :create, :destroy] 
   end
-
+  
+  resources :scarves, only: [:show, :index]
+  
   devise_for :users
 
   resources :users, only: [:index, :show, :destroy]
+
+  resources :users do
+    resources :photos
+  end
+
+  resources :teamss do
+    resources :photos
+  end
+
+  resources :scarves do
+    resources :photos
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

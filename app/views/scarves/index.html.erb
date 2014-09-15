@@ -19,8 +19,7 @@
         <td><%= scarf.club_id %></td>
         <td><%= scarf.user_id %></td>
         <td><%= link_to 'Show', scarf %></td>
-        <td><%= link_to 'Edit', edit_scarf_path(scarf) %></td>
-        <td><%= link_to 'Destroy', scarf, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +27,3 @@
 
 <br>
 
-<%= link_to 'New Scarf', new_scarf_path %>
