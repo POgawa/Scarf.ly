@@ -18,6 +18,8 @@ gem 'will_paginate', '~> 3.0.5'
 gem 'dotenv-rails'
 gem 'aws-sdk'
 gem 'turbolinks'
+gem 'omniauth-venmo'
+
 
 
 
